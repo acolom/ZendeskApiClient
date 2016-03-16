@@ -80,7 +80,7 @@ namespace ZendeskApi.Contracts.Models
         [DataMember(Name = "external_id", EmitDefaultValue = false)]
         public long? External_Id { get; set; }
 
-        [IgnoreDataMember]
+        [DataMember(Name = "collaborator_ids", EmitDefaultValue = false)]
         public List<long> collaborator_ids { get; set; }
 
         [IgnoreDataMember]
